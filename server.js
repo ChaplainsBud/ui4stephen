@@ -1,8 +1,18 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import fetch from 'node-fetch';
+import cors from 'cors';
 
 const app = express();
+
+// CORS configuration
+const corsOptions = {
+    origin: 'https://ui4stephen.vercel.app/', // Replace with your Vercel domain
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true
+};
+app.use(cors(corsOptions));
+
 app.use(bodyParser.json());
 
 app.post('/api/query', async (req, res) => {
