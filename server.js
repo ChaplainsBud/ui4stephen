@@ -7,7 +7,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-    origin: 'https://ui4stephen.vercel.app/', // Replace with your Vercel domain
+    origin: 'https://ui4stephen-iyi7i524m-chaplainsbuds-projects.vercel.app/', // Replace with your Vercel domain
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
 };
